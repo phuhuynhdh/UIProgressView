@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bbq-6w-6rs"/>
+                        <viewControllerLayoutGuide type="bottom" id="AN5-iv-Vq1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vcp-KG-9rf">
+                                <rect key="frame" x="16" y="57" width="288" height="2"/>
+                                <color key="progressTintColor" red="0.33204923828640143" green="0.65999728332106256" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.95651356764096607" green="1" blue="0.78627375255757492" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkE-9J-AsR">
+                                <rect key="frame" x="16" y="28" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9is-I7-jD6">
+                                <rect key="frame" x="16" y="88" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KkE-9J-AsR" firstAttribute="top" secondItem="Bbq-6w-6rs" secondAttribute="bottom" constant="8" symbolic="YES" id="GIW-IG-d0u"/>
+                            <constraint firstItem="KkE-9J-AsR" firstAttribute="trailing" secondItem="Vcp-KG-9rf" secondAttribute="trailing" id="Quc-eq-snb"/>
+                            <constraint firstItem="9is-I7-jD6" firstAttribute="leading" secondItem="Vcp-KG-9rf" secondAttribute="leading" id="SaN-3f-xOQ"/>
+                            <constraint firstItem="Vcp-KG-9rf" firstAttribute="leading" secondItem="KkE-9J-AsR" secondAttribute="leading" id="XJA-aR-0Gd"/>
+                            <constraint firstItem="KkE-9J-AsR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Xpa-4q-OJe"/>
+                            <constraint firstItem="9is-I7-jD6" firstAttribute="top" secondItem="Vcp-KG-9rf" secondAttribute="bottom" constant="29" id="fP3-1Z-RpN"/>
+                            <constraint firstItem="KkE-9J-AsR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="gcs-Oj-D0m"/>
+                            <constraint firstItem="9is-I7-jD6" firstAttribute="trailing" secondItem="Vcp-KG-9rf" secondAttribute="trailing" id="kmq-82-IxS"/>
+                            <constraint firstItem="Vcp-KG-9rf" firstAttribute="top" secondItem="KkE-9J-AsR" secondAttribute="bottom" constant="8" symbolic="YES" id="uim-2D-HAg"/>
+                            <constraint firstItem="AN5-iv-Vq1" firstAttribute="top" secondItem="Vcp-KG-9rf" secondAttribute="bottom" constant="509" id="veQ-pi-8qG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelInfo" destination="KkE-9J-AsR" id="0fx-NY-ctb"/>
+                        <outlet property="labelPercent" destination="9is-I7-jD6" id="cbA-IK-wWT"/>
+                        <outlet property="progressView" destination="Vcp-KG-9rf" id="nPS-oj-HAz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="215"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
